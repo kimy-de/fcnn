@@ -6,7 +6,7 @@
 <p align="center">
 <img width="400" alt="modelarchitecture" src="https://user-images.githubusercontent.com/52735725/147872828-452f41d8-5a86-4803-9b34-ba88b57fa99f.png">
   
-## 1. Train (train.py)
+## 1. Train
 ### 1.1 Hyperparameters  
 ```python
 """
