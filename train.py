@@ -15,7 +15,7 @@ if __name__ == "__main__":
     parser.add_argument('--r', default=1, type=float, help='reaction coefficient')
     parser.add_argument('--numepochs', default=10001, type=int, help='number of epochs')
     parser.add_argument('--sig', default=0, type=float, help='standard deviation for noise generation')
-    parser.add_argument('--poly_order', default=3, type=int, help='order of polynomial approximation')
+    parser.add_argument('--poly_order', default=9, type=int, help='order of polynomial approximation')
     parser.add_argument('--lr', default=1e-2, type=float, help='learning rate')
     parser.add_argument('--pretrained', default=None, type=str, help='pretrained model path')
     args = parser.parse_args()
