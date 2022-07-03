@@ -1,6 +1,6 @@
 # Learning finite difference methods for reaction-diffusion type equations
 
-In this paper, we proposed Five-point stencil CNN (FCNN) containing a five-point stencil kernel and a trainable approximation function. We considered reaction-diffusion type equations including heat, Fisher’s, Allen-Cahn equations, and reaction-diffusion equations with trigonometric functions terms. Our proposed FCNN was trained well using few data (used only two consecutive data) and then can predict reaction-diffusion evolution with unseen initial conditions. Also, we demonstrated the robustness of our FCNN from the noisy train data tests and through various simulation results, it was shown that our proposed method works well.
+In this paper, we propose Five-point stencil CNN (FCNN) containing a five-point stencil kernel and a trainable approximation function. We consider reaction-diffusion type equations including heat, Fisher’s, Allen-Cahn equations, and reaction-diffusion equations with trigonometric functions terms. We show that FCNNs are trained well using few data (used only two consecutive data) and then can predict reaction-diffusion evolutions with diverse initial conditions.[https://arxiv.org/abs/2201.01854]
 
 ## Five-point stencil Convolutional Neural Networks (FCNNs)
 <p align="center">
@@ -38,6 +38,7 @@ Relative L2 error with the 95% confidence interval over 100 different random ini
 """
 ```  
 ### 2.2 Execution  
+Once your model is trained you can evaluate the pretrained model. (Check your hyperparameters)
 ```
 python evaluation.py --eq fe --r 20 --pretrained './models/fe/fe_3_0.pth' --poly_order 3
 ```  
@@ -59,6 +60,7 @@ python evaluation.py --eq fe --r 20 --pretrained './models/fe/fe_3_0.pth' --poly
 """
 ```  
 ### 3.2 Execution  
+Once your model is trained you can evaluate the pretrained model. (Check your hyperparameters)
 ```
 python test.py --eq ac --init star --r 6944 --pretrained './models/ac/ac_3_0.pth' --max_iter 2500
 ```    
