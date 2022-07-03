@@ -11,13 +11,13 @@ def relative_error(pred, target):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Partial Differential Equation')
-    parser.add_argument('--eq', default='ac', type=str, help='equation')
+    parser.add_argument('--eq', default='sine', type=str, help='equation')
     parser.add_argument('--init', default='circle', type=str, help='initial condition')
     parser.add_argument('--c', default=1, type=float, help='diffusion coefficient')
-    parser.add_argument('--r', default=0, type=float, help='reaction coefficient')
+    parser.add_argument('--r', default=1, type=float, help='reaction coefficient')
     parser.add_argument('--max_iter', default=200, type=int, help='max iteration')
-    parser.add_argument('--poly_order', default=3, type=int, help='order of polynomial approximation')
-    parser.add_argument('--pretrained', default="./models/ac/ac_3_0.pth", type=str, help='pretrained model path')
+    parser.add_argument('--poly_order', default=9, type=int, help='order of polynomial approximation')
+    parser.add_argument('--pretrained', default="./models/sine/sine_9_0.pth", type=str, help='pretrained model path')
     args = parser.parse_args()
     print(args)
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
