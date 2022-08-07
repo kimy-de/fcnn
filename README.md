@@ -79,4 +79,5 @@ python test.py --eq ac --init star --r 6944 --pretrained './models/ac/ac_3_0.pth
   
   
   
-  
+## * License
+Code [MIT license](https://opensource.org/licenses/MIT)
