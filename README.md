@@ -1,6 +1,12 @@
-# Learning finite difference methods for reaction-diffusion type equations
+[![DOI:10.24433/CO.5429205.v1](http://img.shields.io/badge/DOI-10.24433/CO.5429205.v1-B31B1B.svg)](https://doi.org/10.24433/CO.5429205.v1)
+# Learning finite difference methods for reaction-diffusion type equations with FCNN
 
-In this paper, we propose Five-point stencil CNN (FCNN) containing a five-point stencil kernel and a trainable approximation function. We consider reaction-diffusion type equations including heat, Fisher’s, Allen-Cahn equations, and reaction-diffusion equations with trigonometric functions terms. We show that FCNNs are trained well using few data (used only two consecutive data) and then can predict reaction-diffusion evolutions with diverse initial conditions.[https://arxiv.org/abs/2201.01854]
+**Yongho Kim and Yongho Choi (2022) *Learning Finite Difference Methods for Reaction-Diffusion Type Equations with FCNN*, Computers and Mathematics with Applications, accepted** [[arxiv](https://arxiv.org/abs/2201.01854)]
+
+In this paper, we propose Five-point stencil CNN (FCNN) containing a five-point stencil kernel and a trainable approximation function. We consider reaction-diffusion type equations including heat, Fisher’s, Allen-Cahn equations, and reaction-diffusion equations with trigonometric functions terms. We show that FCNNs are trained well using few data (used only two consecutive data) and then can predict reaction-diffusion evolutions with diverse initial conditions. 
+
+
+
 
 ## Five-point stencil Convolutional Neural Networks (FCNNs)
 <p align="center">
